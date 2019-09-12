@@ -117,4 +117,6 @@ header label:hover {
 
 .main-header {
     line-height: 1.25em;
+    margin-bottom: -15px;
+    margin-top: -10px;
 }
