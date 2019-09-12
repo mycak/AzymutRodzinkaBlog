@@ -16,14 +16,14 @@ html {
 h1 {
   color: #fff;
   font-family: "Audiowide", cursive;
-  font-size: 2em;
-  font-size: 6vw;
+  font-size: 5em;
+  font-size: 14vw;
   line-height: 1.2;
-  margin: 0.5em 0 1em;
+  position: absolute;
+  top: 10%;
+  left: 15%;
 }
 
-@media (min-width: 1075px) {
-  h1 { font-size: 4em; }
-}
+
 
 

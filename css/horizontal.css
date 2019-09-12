@@ -56,26 +56,18 @@ header label:hover {
 
 .slide-one {
     background-image: url('../pics/3.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
 }
 
 .slide-two {
     background-image: url('../pics/2.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
 }
 
 .slide-three {
     background-image: url('../pics/4.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
 }
 
 .slide-four {
     background-image: url('../pics/1.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
 }
 
 [id^="slide"]:checked + .slide{
@@ -100,6 +92,18 @@ header label:hover {
     width: 80%;
     margin: auto;
     font-size: 2em;
-    font-style: bold;
+    font-weight: bold;
     overflow: auto;
+    height: max-content;
+}
+.container {
+    transform-origin: 0.5 0.5;
+    opacity: 0.7;
+    transition: transform 1s;
+    
+}
+
+.container:hover{
+    cursor: pointer;
+    transform: scale(1.2);
 }
