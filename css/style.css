@@ -19,9 +19,15 @@ h1 {
   font-size: 5em;
   font-size: 14vw;
   line-height: 1.2;
-  position: absolute;
-  top: 10%;
-  left: 15%;
+  margin: auto;
+  margin-top: 6%;
+}
+
+h2 {
+  color: #fff;
+  font-family: "Audiowide", cursive;
+  font-size: 1em;
+  font-size: 2vw;
 }
 
 
