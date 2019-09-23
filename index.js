@@ -3,7 +3,7 @@
 
 function callback(inputChecked){
     return function(){
-        inputChecked.setAttribute("checked", "");
+      inputChecked.checked = true;
     }
 }
 
