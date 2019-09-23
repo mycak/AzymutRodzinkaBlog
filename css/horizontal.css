@@ -1,12 +1,7 @@
-html,
-body {
-    height: 100%;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-}
+/* ============      Navigation  ================*/
 
-.wrap {
+
+.nav-wrapper {
     height: 100%;
     width: 100%;
     position: relative;
@@ -14,6 +9,9 @@ body {
     background: #120103;
     color: #fff;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 header {
@@ -26,7 +24,7 @@ header {
     width: 100%;
 }
 
-header label {
+header label  {
     color: #788188;
     cursor: pointer;
     display: inline-block;
@@ -36,9 +34,20 @@ header label {
     padding: 0 1em;
 }
 
+header button label {
+    font-size: 1.4em;
+}
+
 header label:hover {
     background: #2e353b;
 }
+
+.label-wrapper {
+    font-size: 1.2em;
+    margin-right: 84px;
+}
+
+/* ============ Relations Sections  ========================= */
 
 .slide {
     width: 100%;
@@ -52,7 +61,10 @@ header label:hover {
     background-position: 50% 50%;
     background-size: cover;
     transition: left 0s .75s;
+    overflow: auto;
 }
+
+
 
 .slide-one {
     background-image: url('../pics/3.jpg');
@@ -84,39 +96,207 @@ header label:hover {
     transition: left .65s ease-out;
 }
 
-.slide h1 {
+.slide button {
+    margin-top: 0.3em;
+    margin-left: 0.27em;
+    font-size: 10em;
     opacity: 0;
-    transform: translateY(100%);
-    transition: transform .5s .5s, opacity .5s;
+    transform: translateY(140%);
 }
 
-[id^="slide"]:checked + .slide h1 {
+
+[id^="slide"]:checked + .slide button {
     opacity: 1;
     transform: translateY(0);
-    transition: all .5s .5s;
+    transition: transform .5s .5s, opacity .5s .5s;
+
 }
 
-.blogpost {
-    width: 80%;
-    margin: auto;
-    font-size: 2em;
-    font-weight: bold;
-    overflow: auto;
-    height: max-content;
-}
-.container {
-    transform-origin: 0.5 0.5;
-    opacity: 0.7;
-    transition: transform 1s;
-}
-
-.container:hover{
+[id^="slide"]:checked + .slide button:hover {
     cursor: pointer;
+    transition: transform 1s 0s;
     transform: scale(1.2);
 }
 
-.main-header {
-    line-height: 1.25em;
-    margin-bottom: -15px;
-    margin-top: -10px;
+.container {
+    position: fixed;
+    transform-origin: 0.5 0.5;
+    opacity: 0.7;
+    width: 100%;
+    transition: transform 1s;
+    z-index:50;
 }
+
+/* Relations content */
+
+.relations-content {
+    border: 1px solid black;
+    width: 90%;
+    height: auto;
+    margin: auto;
+    margin-top: -15em;
+    overflow: auto;
+    opacity: 0;
+    z-index: -10;
+}
+
+/* ============ Openning Page ============== */
+.slide-zero {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 100%;
+    z-index: 0;
+    padding: 0 0 0 0;
+    background-color: #120103;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-image: url('../pics/8.jpg');
+}
+
+[id^="slide-0"]:checked + .slide-zero{
+    top: 0;
+    z-index: 100;
+    transition: top .65s ease-out;
+}
+
+.layer-zero {
+    position: absolute;
+    margin: -1em 0 0 0;
+    height: 100%;
+    width: 100%;
+    background-color:rgba(62, 71, 79, .5);
+}
+
+.layer-zero button{
+    font-size: 7em;
+    position: absolute;
+    margin-top:2.2em;
+    margin-left:-4.8em;
+    top: 100%;
+    padding-top: 0;
+    opacity: 0.7;
+}
+
+[id^="slide-0"]:checked + .slide-zero .layer-zero button{
+    top: 0;
+    z-index: 100;
+    transition: top 1s ease-out;
+}
+
+[id^="slide-0"]:checked + .slide-zero .layer-zero button:hover{
+    transition: transform 1s ease-out;
+    transform: scale(1.2);
+}
+
+[id^="slide-0"]:checked + .slide-zero .layer-zero button:active{
+    transform: scale(1.4);
+}
+
+ /*  ==========    MENU Page - Section     ================   */
+
+ .slide-menu {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: -100%;
+    z-index: 10;
+    padding:  0 0 0;
+    background-color: #120103;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-image: url('../pics/7.jpg');
+}
+
+[id^="slide-menu"]:checked + .slide-menu{
+    top: 0;
+    z-index: 100;
+    transition: top .65s ease-out;
+}
+
+.container-menu {
+    position: relative;
+    top: -100%;
+    z-index: 10;
+    background-color:rgba(62, 71, 79, .5);
+    padding: 4em 8em 4em 8em;
+    margin: auto;
+    margin-top: 4.5em;
+    width: 85%;
+    height: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 15%;
+}
+
+[id^="slide-menu"]:checked + .slide-menu .container-menu {
+    top: 0;
+    z-index: 100;
+    transition: top .65s .5s ease-out;
+}
+
+.grid-button, .grid-button-2 {
+    background-color:rgba(62, 71, 79, .5);
+    position: relative;
+    top: -300%;
+    z-index: 10;
+    border: 5px solid white;
+}
+
+[id^="slide-menu"]:checked + .slide-menu .container-menu .grid-button {
+    top: 0;
+    z-index: 100;
+    transition: top .65s 1s ease-out, transform 1s;
+}
+
+[id^="slide-menu"]:checked + .slide-menu .container-menu .grid-button-2 {
+    top: 0;
+    z-index: 100;
+    transition: top .65s 1.4s ease-out, transform 1s;
+}
+
+
+.grid-button button, .grid-button-2 button {
+    font-size: 3em;
+    font-weight: bolder;
+    margin: .85em 0 0 0;
+    padding: 0 0 0 0;
+}
+
+.grid-button:hover, .grid-button-2:hover {
+    transform: scale(1.1);
+}
+
+.grid-button:active, .grid-button-2:active {
+    transform: scale(1.2);
+}
+
+/* ==================    FOOTER   ===========*/
+
+
+footer {
+    margin-top: auto;
+    background: #3e474f;
+    box-shadow: 0 -.2em 1em #111;
+    z-index: 900;
+    line-height: 0.3em;
+    font-size: 0.8em;
+}
+
+.footer ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: #788188;
+    font-size: .5 em;
+}
+
+.footer li {
+    margin: auto;
+}
+
+.footer a:hover {
+    -webkit-box-shadow: 0px 0px 15px 18px rgba(0,0,0,0.71);
+    box-shadow: 0px 0px 3px 3px rgba(0,0,0,0.1);
+ }

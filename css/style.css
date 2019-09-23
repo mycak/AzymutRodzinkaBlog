@@ -2,10 +2,17 @@
 
 html {
   box-sizing: border-box;
-  font-family: Arial, sans-serif;
-  font-size: 16px; 
+  font-family: "Audiowide", sans-serif;
+  font-size: 16px;
   font-weight: normal;
   line-height: 1.4;
+}
+html,
+body {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
 }
 
 *,
@@ -20,14 +27,36 @@ h1 {
   font-size: 14vw;
   line-height: 1.2;
   margin: auto;
-  margin-top: 6%;
+  margin-top: 4%;
 }
 
 h2 {
   color: #fff;
   font-family: "Audiowide", cursive;
-  font-size: 1.2em;
-  font-size: 2.4vw;
+  font-size: 2em;
+}
+
+h3 {
+  color: #fff;
+  font-family: "Audiowide", cursive;
+  font-size: 7em;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  text-decoration: none;
+  font-family: "Audiowide", cursive;
+  color: #fff;
+  background-color: transparent;
+  border: none;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
 }
 
 
