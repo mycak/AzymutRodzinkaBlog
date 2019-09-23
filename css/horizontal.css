@@ -120,6 +120,8 @@ header label:hover {
 
 .container {
     position: fixed;
+    margin-top: 10em;
+    top:0;
     transform-origin: 0.5 0.5;
     opacity: 0.7;
     width: 100%;
@@ -137,7 +139,6 @@ header label:hover {
     margin-top: -15em;
     overflow: auto;
     opacity: 0;
-    z-index: -10;
 }
 
 /* ============ Openning Page ============== */

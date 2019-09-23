@@ -30,8 +30,9 @@ for (var button of buttons) {
 function getOut(myElement){
     return function(){
        for ( var element of myElement) {
-       element.style.opacity = "0";
-       element.style.transition = "opacity 1s";
+        element.style.opacity = "0";
+        element.style.top = "-50%";
+        element.style.transition = "opacity 1s, top 1s";
        }
        for ( var elementContent of myElementContent) {
         elementContent.style.opacity = "1";
@@ -52,7 +53,8 @@ function returnOpacity(myElement){
     return function(){
        for ( var element of myElement)
        element.style.opacity = ".6 ";
-       element.style.transition = "opacity 5s 4s";
+       element.style.top = "50%";
+       element.style.transition = "all 5s 4s";
     
       for ( var elementContent of myElementContent) {
       elementContent.style.opacity = "0";
