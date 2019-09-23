@@ -66,6 +66,10 @@ header label:hover {
 .slide::-webkit-scrollbar {
     display: none;
 }
+.slide {
+    overflow: -moz-scrollbars-none;
+    -ms-overflow-style: none;
+}
 
 
 
@@ -135,12 +139,12 @@ header label:hover {
 /* Relations content */
 
 .relations-content {
-    background-color:rgba(62, 71, 79, .5);
+    background-color:rgba(62, 71, 79, .7);
     border: 1px solid black;
     width: 90%;
     height: auto;
     margin: auto;
-    margin-top: -2em;
+    margin-top: -5em;
     overflow: auto;
     opacity: 0;
     margin-bottom: 6em;

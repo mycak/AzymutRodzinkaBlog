@@ -63,10 +63,6 @@ function returnOpacity(myElement){
     }
 }
 /* ------- MENU SECTIONS ---------*/
-
 var inputCheckedMenu_1 = document.getElementById("slide-1-menu");
 document.getElementById("button-1-menu").addEventListener("click", callback(inputCheckedMenu_1)
   );
-
-  
-var inputCheckedMenu_2 = document.getElementById("slide-4-trigger");
