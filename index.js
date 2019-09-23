@@ -51,14 +51,22 @@ for (var buttonBack of buttonsBack) {
 
 function returnOpacity(myElement){
     return function(){
-       for ( var element of myElement)
-       element.style.opacity = ".6 ";
-       element.style.top = "50%";
-       element.style.transition = "all 5s 4s";
-    
+       for ( var element of myElement) {
+        element.style.opacity = ".6 ";
+        element.style.top = "0";
+        element.style.transition = "all .5s .5s";
+       }
       for ( var elementContent of myElementContent) {
-      elementContent.style.opacity = "0";
-      elementContent.style.transition = "opacity .7s";
+        elementContent.style.opacity = "0";
+        elementContent.style.transition = "opacity .7s";
       }
     }
 }
+/* ------- MENU SECTIONS ---------*/
+
+var inputCheckedMenu_1 = document.getElementById("slide-1-menu");
+document.getElementById("button-1-menu").addEventListener("click", callback(inputCheckedMenu_1)
+  );
+
+  
+var inputCheckedMenu_2 = document.getElementById("slide-4-trigger");
