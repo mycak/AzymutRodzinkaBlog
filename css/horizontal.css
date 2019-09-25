@@ -105,7 +105,6 @@ header label:hover {
 
 .slide button {
     margin-top: 0.3em;
-    margin-left: 0.27em;
     font-size: 10em;
     opacity: 0;
     transform: translateY(140%);
@@ -134,6 +133,9 @@ header label:hover {
     width: 100%;
     transition: transform 1s;
     z-index:50;
+}
+.container-center {
+    margin: center;
 }
 
 /* Relations content */
@@ -287,7 +289,7 @@ header label:hover {
     position: absolute;
     width: 100%;
     height: 100%;
-    top: -100%;
+    top: 100%;
     z-index: 0;
     padding:  0 0 0;
     background-color: #120103;
@@ -299,7 +301,7 @@ header label:hover {
 [id^="slide-1-menu"]:checked + .slide-1-menu{
     top: 0;
     z-index: 200;
-    transition: top .65s ease-out;
+    transition: top 1s ease-out;
 }
 
 
@@ -321,6 +323,7 @@ footer {
     justify-content: center;
     color: #788188;
     font-size: .5 em;
+    padding-left: 0;
 }
 
 .footer li {

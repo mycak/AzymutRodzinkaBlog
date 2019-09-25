@@ -66,3 +66,15 @@ function returnOpacity(myElement){
 var inputCheckedMenu_1 = document.getElementById("slide-1-menu");
 document.getElementById("button-1-menu").addEventListener("click", callback(inputCheckedMenu_1)
   );
+
+var inputCheckedMenu_2 = document.getElementById("slide-1-menu");
+document.getElementById("button-2-menu").addEventListener("click", callback(inputCheckedMenu_2)
+    );
+
+var inputCheckedMenu_3 = document.getElementById("slide-1-menu");
+document.getElementById("button-3-menu").addEventListener("click", callback(inputCheckedMenu_3)
+  );
+
+var inputCheckedMenu_4 = document.getElementById("slide-1-menu");
+document.getElementById("button-4-menu").addEventListener("click", callback(inputCheckedMenu_4)
+    );
