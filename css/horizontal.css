@@ -41,111 +41,11 @@ header label:hover {
 }
 
 .label-wrapper {
-    font-size: 1.2em;
+    font-size: 1em;
     margin-right: auto;
 }
-
-/* ============ Relations Sections  ========================= */
-
-.slide {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 100%;
-    z-index: 10;
-    padding: 10em 1em 0;
-    background-color: #120103;
-    background-position: 50% 50%;
-    background-size: cover;
-    transition: left 0s .75s;
-    overflow: auto;
-}
-.slide::-webkit-scrollbar {
-    display: none;
-}
-.slide {
-    overflow: -moz-scrollbars-none;
-    -ms-overflow-style: none;
-}
-
-.slide-one {
-    background-image: url('../pics/3.jpg');
-}
-
-.slide-two {
-    background-image: url('../pics/2.jpg');
-}
-
-.slide-three {
-    background-image: url('../pics/4.jpg');
-}
-
-.slide-four {
-    background-image: url('../pics/1.jpg');
-}
-
-.slide-five {
-    background-image: url('../pics/5.jpg');
-}
-
-.slide-six {
-    background-image: url('../pics/6.jpg');
-}
-
-[id^="slide"]:checked + .slide{
-    left: 0;
-    z-index: 100;
-    transition: left .65s ease-out;
-}
-
-.slide button {
-    margin-top: 0.2em;
-    font-size: 10em;
-    opacity: 0;
-    transform: translateY(140%);
-}
-
-
-[id^="slide"]:checked + .slide button {
-    opacity: 1;
-    transform: translateY(0);
-    transition: transform .5s .5s, opacity .5s .5s;
-
-}
-
-[id^="slide"]:checked + .slide button:hover {
-    cursor: pointer;
-    transition: transform 1s 0s;
-    transform: scale(1.2);
-}
-
-.container {
-    position: fixed;
-    margin-top: 10em;
-    top:0;
-    transform-origin: 0.5 0.5;
-    opacity: 0.7;
-    width: 100%;
-    transition: transform 1s;
-    z-index:50;
-}
-.container-center {
-    margin: center;
-}
-
-/* Relations content */
-
-.relations-content {
-    background-color:rgba(62, 71, 79, .7);
-    border: 1px solid black;
-    width: 90%;
-    height: auto;
-    margin: auto;
-    margin-top: -5em;
-    overflow: auto;
-    opacity: 0;
-    margin-bottom: 6em;
+.label-wrapper button{
+    padding: 0;
 }
 
 /* ============ Openning Page ============== */
@@ -178,9 +78,9 @@ header label:hover {
 
 .layer-zero button{
     font-size: 6em;
-    position: absolute;
+    position: relative;
     margin-top:2.5em;
-    margin-left:-4.8em;
+    margin-right: auto;
     top: 100%;
     padding-top: 0;
     opacity: 0.7;
@@ -299,6 +199,110 @@ header label:hover {
     z-index: 200;
     transition: top 1s ease-out;
 }
+
+/* ============ Relations Sections  ========================= */
+
+.slide {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    z-index: 10;
+    padding: 10em 1em 0;
+    background-color: #120103;
+    background-position: 50% 50%;
+    background-size: cover;
+    transition: left 0s .75s;
+    overflow: auto;
+}
+.slide::-webkit-scrollbar {
+    display: none;
+}
+.slide {
+    overflow: -moz-scrollbars-none;
+    -ms-overflow-style: none;
+}
+
+.slide-one {
+    background-image: url('../pics/3.jpg');
+}
+
+.slide-two {
+    background-image: url('../pics/2.jpg');
+}
+
+.slide-three {
+    background-image: url('../pics/4.jpg');
+}
+
+.slide-four {
+    background-image: url('../pics/1.jpg');
+}
+
+.slide-five {
+    background-image: url('../pics/5.jpg');
+}
+
+.slide-six {
+    background-image: url('../pics/6.jpg');
+}
+
+[id^="slide"]:checked + .slide{
+    left: 0;
+    z-index: 100;
+    transition: left .65s ease-out;
+}
+
+.slide button {
+    margin-top: 0.2em;
+    font-size: 10em;
+    opacity: 0;
+    transform: translateY(140%);
+}
+
+
+[id^="slide"]:checked + .slide button {
+    opacity: 1;
+    transform: translateY(0);
+    transition: transform .5s .5s, opacity .5s .5s;
+
+}
+
+[id^="slide"]:checked + .slide button:hover {
+    cursor: pointer;
+    transition: transform 1s 0s;
+    transform: scale(1.2);
+}
+
+.container {
+    position: fixed;
+    margin-top: 10em;
+    top:0;
+    transform-origin: 0.5 0.5;
+    opacity: 0.7;
+    width: 100%;
+    transition: transform 1s;
+    z-index:50;
+}
+.container-center {
+    margin: center;
+}
+
+/* Relations content */
+
+.relations-content {
+    background-color:rgba(62, 71, 79, .7);
+    border: 1px solid black;
+    width: 90%;
+    height: auto;
+    margin: auto;
+    margin-top: -5em;
+    overflow: auto;
+    opacity: 0;
+    margin-bottom: 6em;
+}
+
 
 
 /* ==================    FOOTER   ===========*/
@@ -421,18 +425,21 @@ p{
 }
 
 @media (max-width: 599px) {
+.label-wrapper {
+    padding-top: 5px;
+}
 header label {
-    line-height: .4em;
+    line-height: .2em;
 }
 header label button {
-    font-size: .2em;
+    font-size: .5em;
 }
 .layer-zero button{
-    font-size:2em;
-    margin-top:7em;
+    font-size:3em;
+    margin-top:6em;
 }
 .slide button {
-    margin-top: 0.6em;
+    margin-top: 1.8em;
     font-size: 3em;
 }
 .relations-content {
