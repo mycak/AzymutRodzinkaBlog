@@ -11,15 +11,15 @@
         <div class="nav-wrapper">
             <header>
                 <div class="label-wrapper">
-                    <button class="button-click"> <label for="slide-menu-trigger" style="color: white">Azymut rodzinka</label></button>
-                    <button class="button-click"><label for="slide-1-trigger">Malediwy</label></button>
-                    <button class="button-click"><label for="slide-2-trigger">Zanzibar</label></button>
-                    <button class="button-click"> <label for="slide-3-trigger">Tajlandia</label></button>                    
-                    <button class="button-click"> <label for="slide-4-trigger">Azory </label></button>
-                    <button class="button-click"> <label for="slide-5-trigger">Jordania </label></button>
-                    <button class="button-click"> <label for="slide-6-trigger">Chiny </label></button>
+                    <button class="button-click-menu"> <label for="slide-menu-trigger" style="color: white">Azymut rodzinka</label></button>
+                    <button class="button-click hide"><label for="slide-1-trigger">Malediwy</label></button>
+                    <button class="button-click hide"><label for="slide-2-trigger">Zanzibar</label></button>
+                    <button class="button-click hide"> <label for="slide-3-trigger">Tajlandia</label></button>
+                    <button class="button-click hide"> <label for="slide-4-trigger">Azory </label></button>
+                    <button class="button-click hide"> <label for="slide-5-trigger">Jordania </label></button>
+                    <button class="button-click hide"> <label for="slide-6-trigger">Chiny </label></button>
                 </div>
-               
+
             </header>
             <main>
                 // OPENNING PAGE
@@ -164,6 +164,9 @@
                             </div>
                         </div>
                         <div class="relations-content">
+                            <div class="exit-div">
+                                <img src="exit.svg" class="exit-icon">
+                            </div>
                             <p>Relacja</p>
                             <p>The importance of the Arabs as traders in the Indian Ocean by the 12th century may partly explain why the last Buddhist king of Maldives, Dhovemi, converted to Islam in the year 1153 (or 1193). Adopting the Muslim title of Sultan Muhammad al Adil, he initiated a series of six Islamic dynasties that lasted until 1932 when the sultanate became elective. The formal title of the sultan up to 1965 was, Sultan of Land and Sea, Lord of the twelve-thousand islands and Sultan of the Maldives which came with the style Highness.
 
@@ -188,6 +191,9 @@
                         </div>
                     </div>
                     <div class="relations-content">
+                        <div class="exit-div">
+                            <img src="exit.svg" class="exit-icon">
+                        </div>
                         <p>Relacja</p>
                         <p>The importance of the Arabs as traders in the Indian Ocean by the 12th century may partly explain why the last Buddhist king of Maldives, Dhovemi, converted to Islam in the year 1153 (or 1193). Adopting the Muslim title of Sultan Muhammad al Adil, he initiated a series of six Islamic dynasties that lasted until 1932 when the sultanate became elective. The formal title of the sultan up to 1965 was, Sultan of Land and Sea, Lord of the twelve-thousand islands and Sultan of the Maldives which came with the style Highness.
 
@@ -206,29 +212,30 @@
                 </section>
 
 
-                // MENU SECTIONS//
-                <input id="slide-1-menu" type="radio" name="slides">
-                <section class="slide-1-menu">
-                    <div>
-                        <p>O nas!</p>
-                    </div>
-                </section>
-
+                
                 <input id="slide-menu-trigger" type="radio" name="slides">
                 <section class="slide-menu">
                     <div class="container-menu">
                         <div class="grid-button">
-                            <button type="button" id="button-1-menu">O Nas !</button>
+                            <button class="grid" type="button" id="button-1-menu">O Nas !</button>
                         </div>
                         <div class="grid-button">
-                            <button type="button" id="button-2-menu">Relacje</button>
+                            <button class="grid" type="button" id="button-2-menu">Relacje</button>
                         </div>
                         <div class="grid-button-2">
-                            <button type="button" id="button-3-menu">Dziecko</button>
+                            <button class="grid" type="button" id="button-3-menu">Dziecko</button>
                         </div>
                         <div class="grid-button-2">
-                            <button type="button" id="button-4-menu">Porady</button>
+                            <button class="grid" type="button" id="button-4-menu">Porady</button>
                         </div>
+                    </div>
+                    <div class="relations-buttons">
+                        <label for="slide-1-trigger">Malediwy</label>
+                        <label for="slide-2-trigger">Zanzi</label>
+                        <label for="slide-3-trigger">Tajlandia</label>
+                        <label for="slide-4-trigger">Azory </label>
+                        <label for="slide-5-trigger">Jordania </label>
+                        <label for="slide-6-trigger">Chiny </label>
                     </div>
                 </section>
             </main>
