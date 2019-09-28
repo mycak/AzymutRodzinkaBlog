@@ -227,7 +227,7 @@ header label:hover {
     top: -100%;
     z-index: 10;
     background-color:rgba(62, 71, 79, .5);
-    padding: 4em 8em 4em 8em;
+    padding: 3em 3em 3em 3em;
     margin: auto;
     margin-top: 4.5em;
     width: 85%;
@@ -235,7 +235,7 @@ header label:hover {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    grid-gap: 15%;
+    grid-gap: 10%;
 }
 
 [id^="slide-menu"]:checked + .slide-menu .container-menu {
@@ -249,7 +249,7 @@ header label:hover {
     position: relative;
     top: -300%;
     z-index: 10;
-    border: 5px solid white;
+    border: 3px solid white;
 }
 
 [id^="slide-menu"]:checked + .slide-menu .container-menu .grid-button {
@@ -268,7 +268,7 @@ header label:hover {
 .grid-button button, .grid-button-2 button {
     font-size: 3em;
     font-weight: bolder;
-    margin: .85em 0 0 0;
+    margin: 1.1em 0 0 0;
     padding: 0 0 0 0;
 }
 
@@ -369,6 +369,19 @@ h2 {
 p{
     font-size: 1.1em;
 }
+.container-menu {
+    grid-gap: 7%;
+    padding: 2.5em 2.5em 2.5em 2.5em;
+}
+.grid-button button, .grid-button-2 button {
+    font-size: 2.7em;
+    font-weight: bolder;
+    padding: 0 0 0 0;
+    margin-top: 1.1em;
+}
+.grid-button, .grid-button-2 {
+    border: 3px solid white;
+}
 }
 
 @media (max-width: 734px) {
@@ -392,22 +405,35 @@ h2 {
 p{
     font-size: 1em;
 }
+.container-menu {
+    grid-gap: 5%;
+    padding: 2em 2em 2em 2em;
+}
+.grid-button button, .grid-button-2 button {
+    font-size: 2.5em;
+    font-weight: bolder;
+    padding: 0 0 0 0;
+    margin-top: 1.5em;
+}
+.grid-button, .grid-button-2 {
+    border: 3px solid white;
+}
 }
 
 @media (max-width: 599px) {
 header label {
-    line-height: .5em;
+    line-height: .4em;
 }
 header label button {
-    font-size: .3em;
+    font-size: .2em;
 }
 .layer-zero button{
     font-size:2em;
     margin-top:7em;
 }
 .slide button {
-    margin-top: 0.2em;
-    font-size: 4.5em;
+    margin-top: 0.6em;
+    font-size: 3em;
 }
 .relations-content {
     margin-top: -3em;
@@ -417,5 +443,23 @@ h2 {
 }
 p{
     font-size: .7em;
+}
+.exit-div {
+    width: 5%;
+    height: 5%;
+}
+.container-menu {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-gap: 5%;
+}
+.grid-button button, .grid-button-2 button {
+    font-size: 2em;
+    font-weight: bolder;
+    padding: 0 0 0 0;
+    margin-top: 0em;
+}
+.grid-button, .grid-button-2 {
+    border: 2px solid white;
 }
 }
