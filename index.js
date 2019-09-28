@@ -43,11 +43,14 @@ function getOut(myElement){
 
 
 /* -------------- PREVIEW THE TITLE -------- */
-
+var buttonsExit = document.querySelectorAll(".exit-icon");
 var buttonsBack = document.querySelectorAll(".button-click");
 for (var buttonBack of buttonsBack) {
     buttonBack.addEventListener('click', returnOpacity(myElement))
   }
+for (var buttonExit of buttonsExit) {
+  buttonExit.addEventListener('click', returnOpacity(myElement));
+}
 
 function returnOpacity(myElement){
     return function(){
@@ -78,3 +81,5 @@ document.getElementById("button-3-menu").addEventListener("click", callback(inpu
 var inputCheckedMenu_4 = document.getElementById("slide-1-menu");
 document.getElementById("button-4-menu").addEventListener("click", callback(inputCheckedMenu_4)
     );
+
+
