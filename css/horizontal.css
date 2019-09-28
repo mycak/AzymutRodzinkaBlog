@@ -36,7 +36,7 @@ header button label {
     font-size: 1.4em;
 }
 
-header label:hover {
+header button:hover {
     background: #2e353b;
 }
 
@@ -439,7 +439,7 @@ header label button {
     margin-top:6em;
 }
 .slide button {
-    margin-top: 1.8em;
+    margin-top: 2em;
     font-size: 3em;
 }
 .relations-content {
@@ -464,9 +464,12 @@ p{
     font-size: 2em;
     font-weight: bolder;
     padding: 0 0 0 0;
-    margin-top: 0em;
+    margin-top: 0.5em;
 }
 .grid-button, .grid-button-2 {
     border: 2px solid white;
+}
+.relations-content {
+    width: 100%;
 }
 }
