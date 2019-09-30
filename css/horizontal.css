@@ -65,7 +65,7 @@ header button:hover {
 [id^="slide-0"]:checked + .slide-zero{
     top: 0;
     z-index: 100;
-    transition: top 1s ease-out;
+    transition: top 2s ease-out;
 }
 
 .layer-zero {
@@ -89,7 +89,7 @@ header button:hover {
 [id^="slide-0"]:checked + .slide-zero .layer-zero button{
     top: 0;
     z-index: 100;
-    transition: top 1s ease-out;
+    transition: top 2s ease-out;
 }
 
 [id^="slide-0"]:checked + .slide-zero .layer-zero button:hover{
@@ -489,7 +489,7 @@ p{
     margin-top: -2em;
 }
 .relations-buttons {
-    padding-top: 4.7em;
+    padding-top: 5em;
     font-size:1.5em;
 }
 .relations-buttons label{
