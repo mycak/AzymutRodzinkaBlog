@@ -463,9 +463,12 @@ p{
     height: 5%;
 }
 .container-menu {
+    height: 70%;
+    margin-top: 7em;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: .5fr .5fr .5fr .5fr;
     grid-gap: 5%;
+    padding-bottom: 2em;
 }
 .grid-button button, .grid-button-2 button {
     font-size: 2em;
@@ -481,8 +484,8 @@ p{
     margin-top: -6em;
 }
 .relations-buttons {
-    padding-top: 2.5em;
-    font-size:2em;
+    padding-top: 3em;
+    font-size:1.5em;
 }
 .button-click-menu {
     font-size: 1.8em;
