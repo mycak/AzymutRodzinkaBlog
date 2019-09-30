@@ -450,7 +450,7 @@ header label {
     font-size: 3em;
 }
 .relations-content {
-    margin-top: -2em;
+    margin-top: -1.7em;
 }
 h2 {
     font-size: 1em;
@@ -464,15 +464,14 @@ p{
 }
 .container-menu {
     height: 70%;
-    margin-top: 7em;
+    margin-top: 7.5em;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-gap: 5%;
     padding-bottom: 2em;
 }
 .grid-button button, .grid-button-2 button {
     font-size: 2em;
-    font-weight: bolder;
     padding: 0 0 0 0;
     margin-top: 0.5em;
 }
