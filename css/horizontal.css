@@ -446,11 +446,11 @@ header label {
     margin-top:6em;
 }
 .slide button {
-    margin-top: 2em;
+    margin-top: 2.2em;
     font-size: 3em;
 }
 .relations-content {
-    margin-top: -3em;
+    margin-top: -2em;
 }
 h2 {
     font-size: 1em;
@@ -481,10 +481,10 @@ p{
 }
 .relations-content {
     width: 100%;
-    margin-top: -6em;
+    margin-top: -5em;
 }
 .relations-buttons {
-    padding-top: 3em;
+    padding-top: 2em;
     font-size:1.5em;
 }
 .button-click-menu {
