@@ -195,6 +195,10 @@ header button:hover {
     grid-template-columns: 1fr;
     overflow: auto;
 }
+.relations-buttons label:hover{
+    transform: scale(1.2);
+    transition: transform .5s;
+}
 .relations-buttons::-webkit-scrollbar {
     display: none;
 }
@@ -469,6 +473,7 @@ p{
     grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-gap: 5%;
     padding-bottom: 2em;
+    font-style: normal;
 }
 .grid-button button, .grid-button-2 button {
     font-size: 2em;
