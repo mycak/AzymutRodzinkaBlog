@@ -183,6 +183,9 @@ header button:hover {
 }
 
 /*       =============     Menu Sections =============== */
+
+/* --- List of relations --- */
+
 .relations-buttons {
     position: absolute;
     width: 100%;
@@ -206,6 +209,54 @@ header button:hover {
 .relations-buttons {
     overflow: -moz-scrollbars-none;
     -ms-overflow-style: none;
+}
+
+/* --- O nas - section ---*/
+.onas-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: -100%;
+    z-index: 100;
+    padding: 1.3em 0 3em 0;
+    background-color:rgba(62, 71, 79, .5);
+    overflow: auto;
+}
+.onas-container h2 {
+    margin-top: 3em;
+}
+.onas-container img {
+   display: inline-block;
+}
+
+/* --- Dzidzia section ---*/
+.dzidzia-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: -100%;
+    z-index: 100;
+    padding: 1.3em 0 3em 0;
+    background-color:rgba(62, 71, 79, .5);
+    overflow: auto;
+}
+.dzidzia-container h2 {
+    margin-top: 3em;
+}
+/* --- Galeria section ---*/
+
+.galeria-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: -100%;
+    z-index: 100;
+    padding: 1.3em 0 3em 0;
+    background-color:rgba(62, 71, 79, .5);
+    overflow: auto;
+}
+.galeria-container h2 {
+    margin-top: 3em;
 }
 
 /* ============ Relations Sections  ========================= */

@@ -1,13 +1,11 @@
 /* --------------- STARTING PAGE ----------------- */
-
+var inputChecked = document.getElementById("slide-0-trigger");
 
 function callback(inputChecked){
     return function(){
       inputChecked.checked = true;
     }
 }
-
-var inputChecked = document.getElementById("slide-0-trigger");
 
 setTimeout(callback(inputChecked), 100);
 
@@ -68,9 +66,10 @@ function returnOpacity(myElement){
 /* ------- MENU SECTIONS ---------*/
 
 /*-- fIRST BUTTON --*/
-var inputCheckedMenu_1 = document.getElementById("slide-1-menu");
-document.getElementById("button-1-menu").addEventListener("click", callback(inputCheckedMenu_1)
-  );
+document.getElementById("button-1-menu").addEventListener('click', function(){
+  document.querySelector(".onas-container").style.top = "0";
+  document.querySelector(".onas-container").style.transition = "top .65s 1.7s ease-out";
+});
 
 /*-- SECOND BUTTON --*/
 
@@ -81,7 +80,7 @@ var btnsMenu = document.querySelectorAll(".grid");
 
 for (var btnMenu of btnsMenu){
   btnMenu.addEventListener('click', hideButtons(buttonsMenu));
-}
+  }
 function hideButtons (buttonsMenu) {
   return function(){
     for (var buttonMenu of buttonsMenu) {
@@ -89,6 +88,7 @@ function hideButtons (buttonsMenu) {
       buttonMenu.style.transition = "top 1s .1s ease-out, transform 5s ";
       containerMenu.style.top = "-100%";
       containerMenu.style.transition = " top .65s 1s ease-out";
+      
     }
   }}
   // SHOW Menu
@@ -100,24 +100,29 @@ function showButtons (buttonsMenu) {
       buttonMenu.style.transition = "top .65s 1.4s ease-out, transform 1s;opacity 1s";
       containerMenu.style.top = "0";
       containerMenu.style.transition = "top .65s .7s ease-out";
-      document.querySelector(".relations-buttons").style.top = "-100%";
-    document.querySelector(".relations-buttons").style.transition = "top .65s .2s ease-out";
-    }
+      document.querySelectorAll(".relations-buttons, .onas-container, .dzidzia-container, .galeria-container").forEach (hideclass => {hideclass.style.top = "-100%"; hideclass.style.transition = "top .65s .1s ease-out"});
+      }
   }}
   //SHow div
 
-  document.getElementById("button-2-menu").addEventListener('click', function(){
-    document.querySelector(".relations-buttons").style.top = "0";
-    document.querySelector(".relations-buttons").style.transition = "top .65s 1.7s ease-out";
+document.getElementById("button-2-menu").addEventListener('click', function(){
+  document.querySelector(".relations-buttons").style.top = "0";
+  document.querySelector(".relations-buttons").style.transition = "top .65s 1.7s ease-out";
   });
 
 /*-- THIRD BUTTON --*/
-var inputCheckedMenu_3 = document.getElementById("slide-1-menu");
-document.getElementById("button-3-menu").addEventListener("click", callback(inputCheckedMenu_3)
-  );
+
+
+document.getElementById("button-3-menu").addEventListener('click', function(){
+  document.querySelector(".dzidzia-container").style.top = "0";
+  document.querySelector(".dzidzia-container").style.transition = "top .65s 1.7s ease-out";
+  });
+
 /*-- FOURTH BUTTON --*/
-var inputCheckedMenu_4 = document.getElementById("slide-1-menu");
-document.getElementById("button-4-menu").addEventListener("click", callback(inputCheckedMenu_4)
-    );
+
+document.getElementById("button-4-menu").addEventListener('click', function(){
+  document.querySelector(".galeria-container").style.top = "0";
+  document.querySelector(".galeria-container").style.transition = "top .65s 1.7s ease-out";
+  });
 
 
