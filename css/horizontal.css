@@ -401,7 +401,7 @@ footer {
 
 /* ----------- Exit - buttons --------*/
 
- .exit-div {
+ .exit-div, .exit-div-menu {
      position: relative;
      width: 2%;
      height: 2%;
@@ -551,8 +551,10 @@ p{
 .button-click-menu {
     font-size: 1.8em;
 }
-.exit-div {
-    padding-top: 4em;
+.exit-div-menu {
+    margin-top: 6em;
+    width: 5%;
+    height: 5%;
 }
 .onas-container img {
     display: inline-block;

@@ -92,7 +92,7 @@ function showButtons (buttonsMenu) {
   return function(){
     for (var buttonMenu of buttonsMenu) {
       buttonMenu.style.top = "0";
-      buttonMenu.style.transition = "top .65s 1.4s ease-out, transform 1s;opacity 1s";
+      buttonMenu.style.transition = "top .65s .7s ease-out,opacity 1s";
       containerMenu.style.top = "0";
       containerMenu.style.transition = "top .65s .7s ease-out";
       document.querySelectorAll(".relations-buttons, .onas-container, .dzidzia-container, .galeria-container").forEach (hideclass => {hideclass.style.top = "-100%"; hideclass.style.transition = "top .65s .1s ease-out"});
