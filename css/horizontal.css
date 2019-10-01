@@ -151,6 +151,10 @@ header button:hover {
     top: -300%;
     z-index: 10;
     border: 3px solid white;
+    display:flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: center;
 }
 
 [id^="slide-menu"]:checked + .slide-menu .container-menu .grid-button {
@@ -170,7 +174,6 @@ header button:hover {
 .grid-button button, .grid-button-2 button {
     font-size: 3em;
     font-weight: bolder;
-    margin: 1.1em 0 0 0;
     padding: 0 0 0 0;
 }
 
@@ -192,7 +195,7 @@ header button:hover {
     height: 100%;
     top: -100%;
     z-index: 0;
-    padding: 1.3em 0 1em 0;
+    padding: 1em 0 1em 0;
     background-color:rgba(62, 71, 79, .5);
     font-size: 4em;
     display: grid;
@@ -222,12 +225,11 @@ header button:hover {
     background-color:rgba(62, 71, 79, .5);
     overflow: auto;
 }
-.onas-container h2 {
-    margin-top: 3em;
-}
+
 .onas-container img {
    display: inline-block;
 }
+
 
 /* --- Dzidzia section ---*/
 .dzidzia-container {
@@ -240,9 +242,7 @@ header button:hover {
     background-color:rgba(62, 71, 79, .5);
     overflow: auto;
 }
-.dzidzia-container h2 {
-    margin-top: 3em;
-}
+
 /* --- Galeria section ---*/
 
 .galeria-container {
@@ -255,9 +255,7 @@ header button:hover {
     background-color:rgba(62, 71, 79, .5);
     overflow: auto;
 }
-.galeria-container h2 {
-    margin-top: 3em;
-}
+
 
 /* ============ Relations Sections  ========================= */
 
@@ -440,7 +438,6 @@ p{
     font-size: 2.7em;
     font-weight: bolder;
     padding: 0 0 0 0;
-    margin-top: 1.1em;
 }
 .grid-button, .grid-button-2 {
     border: 3px solid white;
@@ -505,9 +502,7 @@ header label {
     margin-top: 2.6em;
     font-size: 3em;
 }
-.relations-content {
-    margin-top: -1.7em;
-}
+
 h2 {
     font-size: 1em;
 }
@@ -530,7 +525,6 @@ p{
 .grid-button button, .grid-button-2 button {
     font-size: 2em;
     padding: 0 0 0 0;
-    margin-top: 0.5em;
 }
 .grid-button, .grid-button-2 {
     border: 2px solid white;
@@ -549,5 +543,8 @@ p{
 }
 .button-click-menu {
     font-size: 1.8em;
+}
+.exit-div {
+    padding-top: 4em;
 }
 }

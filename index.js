@@ -65,14 +65,6 @@ function returnOpacity(myElement){
 }
 /* ------- MENU SECTIONS ---------*/
 
-/*-- fIRST BUTTON --*/
-document.getElementById("button-1-menu").addEventListener('click', function(){
-  document.querySelector(".onas-container").style.top = "0";
-  document.querySelector(".onas-container").style.transition = "top .65s 1.7s ease-out";
-});
-
-/*-- SECOND BUTTON --*/
-
 // Hide Menu
 var containerMenu = document.querySelector(".container-menu");
 var buttonsMenu = document.querySelectorAll(".grid-button, .grid-button-2");
@@ -88,11 +80,14 @@ function hideButtons (buttonsMenu) {
       buttonMenu.style.transition = "top 1s .1s ease-out, transform 5s ";
       containerMenu.style.top = "-100%";
       containerMenu.style.transition = " top .65s 1s ease-out";
-      
     }
   }}
   // SHOW Menu
 document.querySelector(".button-click-menu").addEventListener('click', showButtons(buttonsMenu));
+document.querySelectorAll(".exit-icon-menu").forEach (icon => (
+  icon.addEventListener('click', showButtons(buttonsMenu)))
+);
+
 function showButtons (buttonsMenu) {
   return function(){
     for (var buttonMenu of buttonsMenu) {
@@ -103,6 +98,18 @@ function showButtons (buttonsMenu) {
       document.querySelectorAll(".relations-buttons, .onas-container, .dzidzia-container, .galeria-container").forEach (hideclass => {hideclass.style.top = "-100%"; hideclass.style.transition = "top .65s .1s ease-out"});
       }
   }}
+
+
+
+/*-- fIRST BUTTON --*/
+document.getElementById("button-1-menu").addEventListener('click', function(){
+  document.querySelector(".onas-container").style.top = "0";
+  document.querySelector(".onas-container").style.transition = "top .65s 1.7s ease-out";
+});
+
+/*-- SECOND BUTTON --*/
+
+
   //SHow div
 
 document.getElementById("button-2-menu").addEventListener('click', function(){
