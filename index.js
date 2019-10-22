@@ -1,19 +1,21 @@
-/* --------------- STARTING PAGE ----------------- */
-var inputChecked = document.getElementById("slide-0-trigger");
 
-function callback(inputChecked){
+var inputZeroChecked = document.getElementById("slide-0-trigger");
+
+
+/* --------------- STARTING PAGE ----------------- */
+function callback(inputZeroChecked){
     return function(){
-      inputChecked.checked = true;
+      inputZeroChecked.checked = true;
     }
 }
 
-setTimeout(callback(inputChecked), 100);
+setTimeout(callback(inputZeroChecked), 100);
 
 /* ------------- FIRST VIEW PAGE -------------------- */
 
-inputChecked = document.getElementById("slide-menu-trigger");
-document.getElementById("buttonZero").addEventListener("click", callback(inputChecked)
-  );
+var inputMenuChecked = document.getElementById("slide-menu-trigger");
+document.getElementById("buttonZero").addEventListener("click", callback(inputMenuChecked));
+  ;
 
 /* ------------- BUTTONS SHOWING CONTENT ------------- */
 
@@ -21,9 +23,9 @@ var myElement = document.querySelectorAll(".container");
 var myElementContent = document.querySelectorAll(".relations-content");
 var buttons = document.querySelectorAll(".button-content")
 
-for (var button of buttons) {
+buttons.forEach( button =>
   button.addEventListener('click', getOut(myElement))
-}
+)
 
 function getOut(myElement){
     return function(){
@@ -42,26 +44,33 @@ function getOut(myElement){
 
 /* -------------- BUTTONS HIDING CONTENT -------- */
 var buttonsExit = document.querySelectorAll(".exit-icon");
+
+buttonsExit.forEach(buttonExit => (
+  buttonExit.addEventListener('click', () => {
+    returnOpacity(myElement),
+    setTimeout(callback(inputMenuChecked), 550)
+  })
+));
+
 var buttonsBack = document.querySelectorAll(".button-click");
-for (var buttonBack of buttonsBack) {
-    buttonBack.addEventListener('click', returnOpacity(myElement))
-  }
-for (var buttonExit of buttonsExit) {
-  buttonExit.addEventListener('click', returnOpacity(myElement));
-}
+
+buttonsBack.forEach ( buttonBack => (
+    buttonBack.addEventListener('click', () => {
+    return returnOpacity(myElement)}
+    )));
 
 function returnOpacity(myElement){
-    return function(){
-       for ( var element of myElement) {
-        element.style.opacity = ".6 ";
-        element.style.top = "0";
-        element.style.transition = "all .5s .5s";
-       }
-      for ( var elementContent of myElementContent) {
-        elementContent.style.opacity = "0";
-        elementContent.style.transition = "opacity .7s";
-      }
-    }
+   
+      myElement.forEach(element => (
+        element.style.opacity = ".6 ",
+        element.style.top = "0",
+        element.style.transition = "all .5s .5s"
+       ));
+      myElementContent.forEach ( elementContent => (
+        elementContent.style.opacity = "0",
+        elementContent.style.transition = "opacity .7s"
+      ))
+    
 }
 /* ------- MENU SECTIONS ---------*/
 
@@ -73,31 +82,36 @@ var btnsMenu = document.querySelectorAll(".grid");
 for (var btnMenu of btnsMenu){
   btnMenu.addEventListener('click', hideButtons(buttonsMenu));
   }
+  
 function hideButtons (buttonsMenu) {
   return function(){
     for (var buttonMenu of buttonsMenu) {
       buttonMenu.style.top = "-300%";
-      buttonMenu.style.transition = "top 1s .1s ease-out, transform 5s ";
+      buttonMenu.style.transition = "top 1s .1s ease-out, transform 2s ";
       containerMenu.style.top = "-100%";
-      containerMenu.style.transition = " top .65s 1s ease-out";
+      containerMenu.style.transition = "top .65s 1s ease-out, transform 2s";
     }
   }}
   // SHOW Menu
-document.querySelector(".button-click-menu").addEventListener('click', showButtons(buttonsMenu));
+document.querySelector(".button-click-menu").addEventListener('click', () => {
+  showButtons(buttonsMenu),
+  returnOpacity(myElement);
+})
+
 document.querySelectorAll(".exit-icon-menu").forEach (icon => (
-  icon.addEventListener('click', showButtons(buttonsMenu)))
-);
+  icon.addEventListener('click', () => {
+    return showButtons(buttonsMenu)})
+));
 
 function showButtons (buttonsMenu) {
-  return function(){
-    for (var buttonMenu of buttonsMenu) {
+      buttonsMenu.forEach(buttonMenu => {
       buttonMenu.style.top = "0";
-      buttonMenu.style.transition = "top .65s .7s ease-out,opacity 1s";
+      buttonMenu.style.transition = "top .65s .7s ease-out,opacity 1s, transform 2s";
       containerMenu.style.top = "0";
-      containerMenu.style.transition = "top .65s .7s ease-out";
+      containerMenu.style.transition = "top .65s .7s ease-out, transform 2s";
       document.querySelectorAll(".relations-buttons, .onas-container, .dzidzia-container, .galeria-container").forEach (hideclass => {hideclass.style.top = "-100%"; hideclass.style.transition = "top .65s .1s ease-out"});
-      }
-  }}
+      })
+  }
 
 
 
