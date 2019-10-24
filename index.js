@@ -9,7 +9,7 @@ function callback(inputZeroChecked){
     }
 }
 
-setTimeout(callback(inputZeroChecked), 100);
+setTimeout(callback(inputZeroChecked), 500);
 
 /* ------------- FIRST VIEW PAGE -------------------- */
 
@@ -29,15 +29,16 @@ buttons.forEach( button =>
 
 function getOut(myElement){
     return function(){
-       for ( var element of myElement) {
+       myElement.forEach(element => {
         element.style.opacity = "0";
         element.style.top = "-50%";
         element.style.transition = "opacity 1s, top 1s";
-       }
-       for ( var elementContent of myElementContent) {
+       })
+
+       myElementContent.forEach(elementContent =>  {
         elementContent.style.opacity = "1";
         elementContent.style.transition = "opacity 1s .7s";
-       }
+       }) 
     }
 }
 

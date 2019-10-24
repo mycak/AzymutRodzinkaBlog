@@ -89,7 +89,7 @@ header button:hover {
 [id^="slide-0"]:checked + .slide-zero .layer-zero button{
     top: 0;
     z-index: 100;
-    transition: top 2s ease-out;
+    transition: top 2s ease-out, transform 1s ease-out;
 }
 
 [id^="slide-0"]:checked + .slide-zero .layer-zero button:hover{
@@ -156,6 +156,7 @@ header button:hover {
     flex-direction: column;
     flex-grow: 1;
     justify-content: center;
+    cursor: pointer;
 }
 
 [id^="slide-menu"]:checked + .slide-menu .container-menu .grid-button {
@@ -176,12 +177,12 @@ header button:hover {
     font-size: 3em;
     font-weight: bolder;
     padding: 0 0 0 0;
+    cursor: pointer;
 }
 
 .grid-button:hover, .grid-button-2:hover {
     transition: transform 2s;
     transform: scale(1.3);
-    cursor: pointer;
 }
 
 .grid-button:active, .grid-button-2:active {
@@ -207,6 +208,7 @@ header button:hover {
     margin-bottom: 0;
     font-size: 0.3em;
     cursor: pointer;
+    transition: transform .5s;
 }
 .relations-list-wrapper {
     margin-top: 2em;
@@ -215,6 +217,7 @@ header button:hover {
 }
 .relations-buttons button {
     font-size: 1em;
+    transition: transform .5s;
 }
 .relations-buttons button:hover, .relations-buttons p:hover{
     transform: scale(1.2);
@@ -325,6 +328,9 @@ header button:hover {
 .slide-six {
     background-image: url('../pics/6.jpg');
 }
+.slide-seven {
+    background-image: url('../pics/9.jpg');
+}
 
 [id^="slide"]:checked + .slide{
     left: 0;
@@ -333,23 +339,24 @@ header button:hover {
 }
 
 .slide button {
+    position: relative;
     margin-top: 0.2em;
     font-size: 10em;
     opacity: 0;
-    transform: translateY(140%);
+    top:200px;
 }
 
 
 [id^="slide"]:checked + .slide button {
     opacity: 1;
-    transform: translateY(0);
-    transition: transform .5s .5s, opacity .5s .5s;
+    top:0;
+    transition: top .5s .5s, opacity .5s .5s, transform 1s;
 
 }
 
 [id^="slide"]:checked + .slide button:hover {
     cursor: pointer;
-    transition: transform 1s 0s;
+    transition: transform 1s;
     transform: scale(1.2);
 }
 
