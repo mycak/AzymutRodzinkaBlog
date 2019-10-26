@@ -9,7 +9,7 @@ function callback(inputZeroChecked){
     }
 }
 
-setTimeout(callback(inputZeroChecked), 500);
+setTimeout(callback(inputZeroChecked), 800);
 
 /* ------------- FIRST VIEW PAGE -------------------- */
 
@@ -24,7 +24,9 @@ var myElementContent = document.querySelectorAll(".relations-content");
 var buttons = document.querySelectorAll(".button-content")
 
 buttons.forEach( button =>
-  button.addEventListener('click', getOut(myElement))
+  button.addEventListener('mousemove', function() {
+    setTimeout(getOut(myElement),500);
+  })
 )
 
 function getOut(myElement){

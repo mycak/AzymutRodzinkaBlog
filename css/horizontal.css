@@ -178,6 +178,7 @@ header button:hover {
     font-weight: bolder;
     padding: 0 0 0 0;
     cursor: pointer;
+    height: 100%;
 }
 
 .grid-button:hover, .grid-button-2:hover {
@@ -428,6 +429,7 @@ footer {
      height: 2%;
      left: 92%;
      margin-top: 5%;
+     cursor: pointer;
  }
 
  .exit-div:hover {
