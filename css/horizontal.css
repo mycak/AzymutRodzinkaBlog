@@ -224,13 +224,13 @@ header button:hover {
     transform: scale(1.2);
     transition: transform .5s;
 }
-.relations-buttons::-webkit-scrollbar {
+/* .relations-buttons::-webkit-scrollbar {
     display: none;
 }
 .relations-buttons {
     overflow: -moz-scrollbars-none;
     -ms-overflow-style: none;
-}
+} */
 
 /* --- O nas - section ---*/
 .onas-container {
@@ -247,13 +247,13 @@ header button:hover {
 .onas-container img {
    display: inline-block;
 }
-.onas-container::-webkit-scrollbar {
+/* .onas-container::-webkit-scrollbar {
     display: none;
 }
 .onas-container {
     overflow: -moz-scrollbars-none;
     -ms-overflow-style: none;
-}
+} */
 
 
 /* --- Dzidzia section ---*/
@@ -298,13 +298,13 @@ header button:hover {
     transition: left 0s .75s;
     overflow: auto;
 }
-.slide::-webkit-scrollbar {
+/* .slide::-webkit-scrollbar {
     display: none;
 }
 .slide {
     overflow: -moz-scrollbars-none;
     -ms-overflow-style: none;
-}
+} */
 
 .slide-one {
     background-image: url('../pics/3.jpg');
@@ -598,4 +598,39 @@ p{
     margin-bottom: 3em;
     font-size: 0.3em;
 }
+}
+
+/*Scroll Bar*/
+.slide::-webkit-scrollbar, .onas-container::-webkit-scrollbar, .relations-buttons::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+.slide::-webkit-scrollbar-button, .onas-container::-webkit-scrollbar-button, .relations-buttons::-webkit-scrollbar-button {
+  width: 9px;
+  height: 9px;
+}
+.slide::-webkit-scrollbar-thumb, .onas-container::-webkit-scrollbar-thumb, .relations-buttons::-webkit-scrollbar-thumb {
+  background: #e1e1e1;
+  border: 0px none #ffffff;
+  border-radius: 19px;
+}
+.slide::-webkit-scrollbar-thumb:hover, .onas-container::-webkit-scrollbar-thumb:hover, .relations-buttons::-webkit-scrollbar-thumb:hover {
+  background: #ffffff;
+}
+.slide::-webkit-scrollbar-thumb:active, .onas-container::-webkit-scrollbar-thumb:active, .relations-buttons::-webkit-scrollbar-thumb:active {
+  background: #ffffff;
+}
+.slide::-webkit-scrollbar-track, .onas-container::-webkit-scrollbar-track, .relations-buttons::-webkit-scrollbar-track {
+  background: #666666;
+  border: 0px none #ffffff;
+  border-radius: 50px;
+}
+.slide::-webkit-scrollbar-track:hover, .onas-container::-webkit-scrollbar-track:hover, .relations-buttons::-webkit-scrollbar-track:hover {
+  background: #666666;
+}
+.slide::-webkit-scrollbar-track:active, .onas-container::-webkit-scrollbar-track:active, .relations-buttons::-webkit-scrollbar-track:active {
+  background: #666666;
+}
+.slide::-webkit-scrollbar-corner, .onas-container::-webkit-scrollbar-corner, .relations-buttons::-webkit-scrollbar-corner {
+  background: transparent;
 }
