@@ -28,6 +28,9 @@ buttons.forEach( button =>
     setTimeout(getOut(myElement),500);
   })
 )
+buttons.forEach( button =>
+  button.addEventListener('click', getOut(myElement))
+  )
 
 function getOut(myElement){
     return function(){
