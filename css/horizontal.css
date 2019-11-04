@@ -436,7 +436,7 @@ footer {
      cursor: pointer;
  }
 
- *Scroll Bar*/
+ /*Scroll Bar*/
 .slide::-webkit-scrollbar, .onas-container::-webkit-scrollbar, .relations-buttons::-webkit-scrollbar {
   width: 4px;
   height: 4px;
@@ -641,4 +641,3 @@ p{
 }
 }
 
-/
